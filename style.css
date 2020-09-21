@@ -22,8 +22,10 @@ body.wejscie{
 }
 body.glowna{
 	margin: 0 auto;
-	height: 100%;
+	min-height: 100%;
 	width: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 p {
 	color: #5D2971;
@@ -160,7 +162,7 @@ a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 50vh;
+	min-height: 50vh;
 	background: rgb(170,57,57);
 	background: -moz-linear-gradient(180deg, rgba(170,57,57,1) 0%, rgba(136,45,97,1) 100%);
 	background: -webkit-linear-gradient(180deg, rgba(170,57,57,1) 0%, rgba(136,45,97,1) 100%);
@@ -197,8 +199,8 @@ a {
 }
 
 .zone {
-    /*padding:30px 50px;*/
-    /*cursor:pointer;*/
+    /* padding:30px 50px;*/
+    /*cursor:pointer; */
     color:#FFF;
     font-size:2em;
     border-radius:4px;
@@ -206,12 +208,12 @@ a {
     transition: all 0.3s linear;
 }
 
-.zone:hover {
+/* .zone:hover {
     -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     box-shadow: #fec7d7 0px 5px 15px, inset #fec7d7 0px -10px 20px;
-}
+} */
 
 /*###################################################*/
 /*About*/
@@ -227,9 +229,13 @@ a {
 }*/
 body.about {
 	background: url(about-cover.jpg) no-repeat center center fixed; 
+	width: 100%;
+	min-height: 100%;
     background-attachment: fixed; 
     background-size: cover;
-    display: grid;
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	grid-template-rows: auto 1fr auto;
     align-items: center;
     justify-content: center;
     height: 100vh;
@@ -260,6 +266,10 @@ body.about {
     margin: -20px;
 }
 
+body.about header {
+	grid-column: 1/4;
+}
+
 /*###################################################*/
 
 /* JS Test */
@@ -284,7 +294,7 @@ body.about {
 /* Ankieta */
 
 body.ankieta {
-	background: url(about-cover.jpg) no-repeat center center fixed; 
+	background: url(about-cover.jpg); 
 	height: 100%;
 	width: 100%;
 	margin: 0 auto;
