@@ -10,7 +10,7 @@ html{
 }
 body.wejscie{
 	height: 100%;
-	width: 100%;
+	margin: 0 auto;
 	background: url(wejscie-cover.jpg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -171,7 +171,7 @@ li a:hover {
 /*About*/
 /*###################################################*/
 
-body.about {
+body.about, body.ankieta {
 	background: url(about-cover.jpg) no-repeat center center fixed; 
 	margin: 0 10vw;
 	min-height: 100%;
@@ -223,16 +223,6 @@ body.about footer {
 
 /* Ankieta */
 
-body.ankieta {
-	background: url(about-cover.jpg) no-repeat center center fixed; 
-	min-height: 100%;
-	/* width: 100%; */
-	margin: 0 10vw;
-	display: grid;
-	grid-template-columns: 1fr 4fr 1fr;
-	grid-template-rows: auto auto 1fr;
-}
-
 .ankieta-header {
 	grid-column: 1/-1;
 }
@@ -256,6 +246,6 @@ content {
 	  font-size: 5vw;
 	}
 	body.glowna, body.ankieta, body.about {
-		margin: 0 auto;
+		margin: 0 3vw;
 	}
   }
