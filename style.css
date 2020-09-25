@@ -90,30 +90,23 @@ footer:hover {
 
 /*NAVBAR*/
 /*###################################################*/
-header {
-	background: #fffffe;
-}
-.main-nav {
-	display: flex;
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	font-size: 2.5vw;
-}
-header li {
-	padding: 10px;
+
+.navbar-custom{
+	background-color: #fffffe;
 }
 
-li a {
-	color: #2b2c34;
-	text-decoration: none;
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: #2b2c34;
 }
-li a:hover {
-	color: #6246ea;
+/* change the link color and padding  */
+.navbar-custom .navbar-nav .nav-link {
+    color: #2b2c34;
+    padding: .75rem 1rem;
 }
-#contactright{
-	margin-left: auto;
-}
+
+
 
 /*###################################################*/
 
@@ -211,7 +204,7 @@ body.about, body.ankieta {
     margin: -20px;
 }
 
-body.about header {
+body.about nav {
 	grid-column: 1/4;
 }
 body.about footer {
@@ -220,25 +213,6 @@ body.about footer {
 }
 
 /*###################################################*/
-
-/* Ankieta */
-
-.ankieta-header {
-	grid-column: 1/-1;
-}
-content {
-	background-color: #bbb;
-	grid-column: 2 / 3;
-	
-}
-
-.ankieta-footer {
-	grid-column: 1/-1;
-	grid-row: 6/7;
-}
-
-/* ########################## */
-
 
 
 @media only screen and (max-width: 1000px) {

@@ -15,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/marelons1337/anna-beauty/issues"
   },
-  "homepage": "https://github.com/marelons1337/anna-beauty#readme"
+  "homepage": "https://github.com/marelons1337/anna-beauty#readme",
+  "dependencies": {}
 }
