@@ -226,10 +226,10 @@ footer:hover {
 
 @media only screen and (max-width: 1000px) {
 	.navbar, .navbar-brand {
-	  font-size: 4rem !important;
+	  font-size: 2.5rem !important;
 	}
 	footer {
-		font-size: 2rem !important;
+		font-size: 1.5rem !important;
 	}
 
   }
