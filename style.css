@@ -76,6 +76,7 @@ section#blocks {
 	background: #FFD1AA;
 }
 
+
 /*###################################################*/
 
 /*NAVBAR*/
@@ -107,7 +108,7 @@ section#blocks {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	min-height: 50vh;
+	min-height: 80vh;
 	background: #fffffe;
 	background: url(glowna-cover.jpg);
 	background-repeat: no-repeat;
@@ -115,70 +116,25 @@ section#blocks {
 
 }
 
-
-/*###################################################*/
-/*Blocks*/
-/*###################################################*/
-
-.blocks {
-	background: #fffffe;
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
-	grid-gap: 20px;
-
-}
-.block {
-	background-color: #d1d1e9;
-	padding: 30px;
-	margin: 20px;
-}
-.block > img {
-	width: 100%;
-}
-
-.zone {
-    color:#FFF;
-    font-size:2em;
-    border-radius:4px;
-    transition: all 0.3s linear;
-}
-
-/* .zone:hover {
-    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    box-shadow: #fec7d7 0px 5px 15px, inset #fec7d7 0px -10px 20px;
-} */
-
 /*###################################################*/
 /*About*/
 /*###################################################*/
 
 body.about{
-	background: url(about-cover.jpg) no-repeat center center fixed; 
 	margin: 0 10vw;
 	min-height: 100%;
-    background-attachment: fixed; 
-    background-size: cover;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: auto 1fr auto;
-    align-items: center;
-	justify-content: center;
-	color: #fffffe;
-
+	}
+.container-about {
+	background: url(about-cover.jpg) no-repeat center center;
+	display: flex;
+	align-items: center;
 }
 
 h1.about{
 	font-size: 2rem;
 	color: #fffffe;
-}
-body.about nav {
-	grid-column: 1/4;
-}
-body.about footer {
-	grid-column: 1/4;
-	grid-row: 3/4;
 }
 
 .button-back {
@@ -206,11 +162,6 @@ body.about footer {
 	color: #fffffe;
 }
 
-.container-about {
-	grid-column: 2/3;
-	justify-self: center;
-}
-
 footer{
 	background: #fffffe;
 	color: #2b2c34;
@@ -219,6 +170,9 @@ footer{
 }
 footer:hover {
 	color: #6246ea;
+}
+.about-me {
+	justify-content: center;
 }
 
 /*###################################################*/
@@ -238,13 +192,15 @@ footer:hover {
 		margin-top: 20px !important;
 		font-size: 1.5rem !important;
 	}
-
+	.container-about {
+		background: url(about-cover.jpg) 20%;
+	}
   }
 
   /* ******************************************************* */
 .carousel {
 	margin-top: 20px;
-	margin-bottom: 20px
+	margin-bottom: 20px;
 }
 
 h2 {
