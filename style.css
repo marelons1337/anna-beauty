@@ -36,38 +36,22 @@ h1{
 }
 
 
-
-/*img:hover {
-	transform: scale(1.1);
-}*/
-.col {
-	background-color: gray;
-	border: 2px solid black;
-}
 .btn {
 	font-weight: 700;
 	border-radius: 300px;
 	border-color: #5D2971
 }
 .btn-xl {
-	color: #fffffe ;
+	color: #fffffe;
 	border-color: #6246ea;
 	background-color: #6246ea;
 	padding: 1rem 4rem;
 }
 .btn-xl:hover {
-	color: #6246ea;
-	background-color:#d1d1e9;
-	border-color: #d1d1e9;
+	border-color: #6246ea;
+	color: #fffffe;
+	filter: brightness(1.2);
 }
-
-hr {
-	margin-top: -10px;
-	border-color: #d1d1e9;
-	border-width: 3px;
-	max-width: 500px;
-}
-
 header.glowny-header {
 	background: none;
 }
@@ -151,7 +135,7 @@ h1.about{
 	justify-content: center;
 	background-color: #6246ea;
 	color: #fffffe;
-	border-radius: 8px;
+	border-radius: 300px;
 	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
 	padding: 0.25em 0.75em;
 	min-width: 10ch;
