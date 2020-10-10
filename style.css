@@ -157,6 +157,7 @@ h1.about{
 	min-width: 10ch;
 	min-height: 44px;
 	transition: 220ms all ease-in-out;
+	margin-bottom: 15px;
   }
 .button-back:hover {
 	filter: brightness(1.2);
@@ -175,8 +176,8 @@ footer:hover {
 	color: #6246ea;
 }
 .about-me {
-	justify-content: center;
-	background-color: rgba(0, 0, 0, 0.28);
+	width: 50%;
+	background-color: rgba(43, 44, 52, 0.7);
 }
 
 /*###################################################*/
@@ -198,6 +199,9 @@ footer:hover {
 	}
 	.container-about {
 		background: url(about-cover.jpg) 20%;
+	}
+	.about-me{
+		width: auto;
 	}
   }
 
